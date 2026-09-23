@@ -1,10 +1,11 @@
 {
   "name": "drug-council",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node --check src/contracts.js",
+    "build": "node --check src/contracts.js && for f in src/governance.js src/registry.js src/motions.js src/ballots.js src/tally.js src/actions.js src/notices.js src/minutes.js; do node --check \"$f\"; done && node --check scripts/build_fixture.mjs",
+    "build:fixture": "node scripts/build_fixture.mjs",
     "test": "node --test"
   }
 }

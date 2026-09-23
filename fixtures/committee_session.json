@@ -1,0 +1,1589 @@
+{
+  "schema_version": 2,
+  "record_id": "sample-018",
+  "domain": "drug_council",
+  "occurred_at": "2026-09-23T12:00:00+08:00",
+  "revision": 55,
+  "source": "业务样例",
+  "meeting": {
+    "meeting_id": "JDC-2026-037",
+    "title": "第三十七次联合药研委员会",
+    "convened_at": "2026-09-23T09:00:00+08:00"
+  },
+  "governance": {
+    "memberships": [
+      {
+        "member_id": "M-ALPHA",
+        "party_id": "P-ALPHA",
+        "party_name": "阿尔法生物",
+        "role": "voting",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "member_id": "M-BETA",
+        "party_id": "P-BETA",
+        "party_name": "贝塔制药",
+        "role": "voting",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "member_id": "M-GAMMA",
+        "party_id": "P-GAMMA",
+        "party_name": "伽马临床研究中心",
+        "role": "voting",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "member_id": "M-OBS",
+        "party_id": "P-GAMMA",
+        "party_name": "伽马临床研究中心",
+        "role": "observer",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      }
+    ],
+    "delegations": [
+      {
+        "member_id": "M-BETA",
+        "delegate_id": "D-BETA",
+        "delegate_name": "贝塔授权代表",
+        "version": 1,
+        "effective_from": "2026-09-15T00:00:00+08:00",
+        "effective_until": "2026-09-25T00:00:00+08:00"
+      }
+    ],
+    "recusals": [
+      {
+        "recusal_id": "REC-ALPHA-M",
+        "member_id": "M-ALPHA",
+        "motion_id": "M-2026-031",
+        "sections": [
+          "SEC-MILESTONE"
+        ],
+        "reason": "里程碑付款直接收款方，临时披露利益冲突",
+        "version": 1,
+        "effective_from": "2026-09-23T08:30:00+08:00"
+      }
+    ],
+    "materials": [
+      {
+        "material_id": "MAT-MILESTONE",
+        "version": 1,
+        "title": "里程碑付款计划",
+        "motion_id": "M-2026-031",
+        "section_id": "SEC-MILESTONE",
+        "content_digest": "c0d84082829b22859ed0ee7f8e303363b6a479581e12e63127d49ca381361c19",
+        "version_note": "v1",
+        "effective_from": "2026-09-01T08:00:00+08:00",
+        "attachments": [
+          {
+            "attachment_id": "ATT-BANK-1",
+            "filename": "payment_accounts.xlsx",
+            "content_digest": "b1756985bae613d8829477e2a5b3f3aad288fa6f21c287568606f05acec2d20e",
+            "visibility": {
+              "parties": [
+                "P-ALPHA",
+                "P-BETA"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "material_id": "MAT-PROTOCOL",
+        "version": 1,
+        "title": "三期试验方案 C 稿",
+        "motion_id": "M-2026-031",
+        "section_id": "SEC-PROTOCOL",
+        "content_digest": "6c783fb325524a9fe6c726494107e90344fe6a171a84779df7d2edc692c69fe2",
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "material_id": "MAT-SAFETY",
+        "version": 1,
+        "title": "SAE-2026-094 初步报告",
+        "motion_id": "M-2026-031",
+        "section_id": "SEC-SAFETY",
+        "content_digest": "2e97f6847e90c81fd50e8360a2d8fb9da7ca43c43d71c18f24739d52caee9c38",
+        "effective_from": "2026-09-20T18:00:00+08:00",
+        "attachments": [
+          {
+            "attachment_id": "ATT-SAE-1",
+            "filename": "sae_raw_e2d4.pdf",
+            "content_digest": "c205bad7ece2be352d0b1c2aeb033953177228832446944087cf9c883dcba850",
+            "visibility": {
+              "parties": [
+                "P-BETA",
+                "P-GAMMA"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "material_id": "MAT-PROTOCOL",
+        "version": 2,
+        "title": "三期试验方案 C 稿（监管反馈修订）",
+        "motion_id": "M-2026-031",
+        "section_id": "SEC-PROTOCOL",
+        "content_digest": "79382dac4d287ea0e1d2a1ba44776b7a3a0489f4212f3591f5585d8fb04ed869",
+        "effective_from": "2026-09-19T08:00:00+08:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_id": "RW-037",
+        "motion_id": "M-2026-031",
+        "version": 1,
+        "opens_at": "2026-09-16T10:00:00+08:00",
+        "closes_at": "2026-09-22T18:00:00+08:00",
+        "effective_from": "2026-09-16T10:00:00+08:00"
+      }
+    ],
+    "quorum_rules": [
+      {
+        "rule_id": "QR-GENERAL",
+        "kind": "fraction",
+        "numerator": 2,
+        "denominator": 3,
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      }
+    ],
+    "thresholds": [
+      {
+        "threshold_id": "TH-MAJORITY",
+        "kind": "majority",
+        "basis": "non_abstain",
+        "numerator": 1,
+        "denominator": 2,
+        "inclusive": false,
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "threshold_id": "TH-PROTOCOL",
+        "kind": "supermajority",
+        "basis": "eligible",
+        "numerator": 2,
+        "denominator": 3,
+        "topics": [
+          "protocol_amendment"
+        ],
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "threshold_id": "TH-SAFETY",
+        "kind": "unanimous",
+        "basis": "non_abstain",
+        "topics": [
+          "safety_hold"
+        ],
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      }
+    ],
+    "officers": [
+      {
+        "role": "chair",
+        "holder_id": "M-ALPHA",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "role": "safety_officer",
+        "holder_id": "M-GAMMA",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      },
+      {
+        "role": "steering_group_chair",
+        "holder_id": "M-ALPHA",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00"
+      }
+    ],
+    "agenda_scopes": [
+      {
+        "scope_id": "AS-037",
+        "version": 1,
+        "effective_from": "2026-09-01T08:00:00+08:00",
+        "topics": [
+          "milestone_payment",
+          "protocol_amendment",
+          "safety_hold"
+        ],
+        "motion_id": "M-2026-031"
+      }
+    ]
+  },
+  "motions": [
+    {
+      "motion_id": "M-2026-031",
+      "title": "关于 III 期项目第 4 里程碑付款、方案第 3 次修订及安全暂停的议案",
+      "sponsor_id": "M-ALPHA",
+      "introduced_at": "2026-09-16T09:30:00+08:00",
+      "current_revision": 2,
+      "sections": [
+        {
+          "section_id": "SEC-MILESTONE",
+          "topic": "milestone_payment",
+          "title": "第 4 里程碑付款",
+          "revision": 1,
+          "content_digest": "0598c87cfaac29e508c894e6dfe064d47e2bfdc7a787ed6b32af2fbba28167bb",
+          "material_refs": [
+            "MAT-MILESTONE"
+          ],
+          "introduced_at": "2026-09-16T09:30:00+08:00",
+          "last_signoff": {
+            "revision": 1,
+            "decision_id": "DEC-2026-031",
+            "at": "2026-09-23T10:00:00+08:00"
+          }
+        },
+        {
+          "section_id": "SEC-PROTOCOL",
+          "topic": "protocol_amendment",
+          "title": "方案第 3 次修订",
+          "revision": 2,
+          "content_digest": "e77befc4fd5d2205d9737798a1a91f9a13c249ba57d93cbf1f061302e4ba134d",
+          "material_refs": [
+            "MAT-PROTOCOL"
+          ],
+          "introduced_at": "2026-09-19T10:00:00+08:00",
+          "last_signoff": {
+            "revision": 2,
+            "decision_id": "DEC-2026-031",
+            "at": "2026-09-23T10:00:00+08:00"
+          }
+        },
+        {
+          "section_id": "SEC-SAFETY",
+          "topic": "safety_hold",
+          "title": "301 中心安全暂停",
+          "revision": 1,
+          "content_digest": "a853e13324cd5c89e314bf7f90bf0758bfe7a94d35eddab0be1c2480477ad32d",
+          "material_refs": [
+            "MAT-SAFETY"
+          ],
+          "introduced_at": "2026-09-16T09:30:00+08:00",
+          "last_signoff": {
+            "revision": 1,
+            "decision_id": "DEC-2026-031",
+            "at": "2026-09-23T10:00:00+08:00"
+          }
+        }
+      ],
+      "revisions": [
+        {
+          "revision": 1,
+          "at": "2026-09-16T09:30:00+08:00",
+          "changed_sections": [
+            "SEC-MILESTONE",
+            "SEC-PROTOCOL",
+            "SEC-SAFETY"
+          ],
+          "rationale": "议案提出",
+          "editor_id": "M-ALPHA",
+          "materials_refreshed": {}
+        },
+        {
+          "revision": 2,
+          "at": "2026-09-19T10:00:00+08:00",
+          "changed_sections": [
+            "SEC-PROTOCOL"
+          ],
+          "rationale": "按药监 9 月 18 日反馈补充安全性随访",
+          "editor_id": "M-GAMMA",
+          "materials_refreshed": {
+            "SEC-PROTOCOL": [
+              "MAT-PROTOCOL@v2"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "ballots": [
+    {
+      "ballot_id": "BAL-1",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-PROTOCOL",
+      "authorization_id": "seat:M-ALPHA",
+      "cast_by": "M-ALPHA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "119f8ee2b1c53697d1d8a09ba1059d7ef02030bd902da99c9bf208ace77c8f53",
+      "cast_at": null,
+      "received_at": "2026-09-17T09:00:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "alpha-p-v1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-2",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-PROTOCOL",
+      "authorization_id": "seat:M-BETA",
+      "cast_by": "D-BETA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "782e23b3c05d2611c9227c00c3f57580cff1f2bcd7402face68a56d0a99569ea",
+      "cast_at": null,
+      "received_at": "2026-09-17T09:10:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "dbeta-p-v1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-3",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-PROTOCOL",
+      "authorization_id": "seat:M-GAMMA",
+      "cast_by": "M-GAMMA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "bff61223bf22a17c7142a28246971524f654023a387ebd28b05b8d0a71a59464",
+      "cast_at": null,
+      "received_at": "2026-09-17T09:20:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "gamma-p-v1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-4",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-MILESTONE",
+      "authorization_id": "seat:M-ALPHA",
+      "cast_by": "M-ALPHA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "b6ed76a3d956015f691884eb46ba0644ed7681bb3318e60516eb9d401c92b807",
+      "cast_at": null,
+      "received_at": "2026-09-20T09:00:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "alpha-m-1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-5",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-MILESTONE",
+      "authorization_id": "seat:M-BETA",
+      "cast_by": "D-BETA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "2efb05400329cef9a8f13c9d28b3332643ec93c709e8530ce32775e480170327",
+      "cast_at": null,
+      "received_at": "2026-09-20T09:15:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "dbeta-m-1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-6",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-SAFETY",
+      "authorization_id": "seat:M-ALPHA",
+      "cast_by": "M-ALPHA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "e3d7dc2f0fed4c9a8ad17a438ab2a24e565c11413ceb32ff8f683271e3c940b8",
+      "cast_at": null,
+      "received_at": "2026-09-20T10:00:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "alpha-s-1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-7",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-SAFETY",
+      "authorization_id": "seat:M-BETA",
+      "cast_by": "D-BETA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "bcad2f874fc75f36264bbd057e312562df0dee56bd4f83abd035b5da901e76c3",
+      "cast_at": null,
+      "received_at": "2026-09-20T10:15:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "dbeta-s-1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-8",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-MILESTONE",
+      "authorization_id": "seat:M-GAMMA",
+      "cast_by": "M-GAMMA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "2fc4c333fa1eac4673c878435971d112e5a73b7739da703d9fdda58d425395d8",
+      "cast_at": "2026-09-21T20:00:00+08:00",
+      "received_at": "2026-09-22T08:55:00+08:00",
+      "revealed": {
+        "choice": "reject",
+        "conditions": [],
+        "salt": "gamma-m-offline-1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-9",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-MILESTONE",
+      "authorization_id": "seat:M-GAMMA",
+      "cast_by": "M-GAMMA",
+      "seq": 2,
+      "section_revision": 1,
+      "commitment": "67b367d45f56184fb5fbe24c7305fc142e3ca2866ca0d1f99758b2be42774c9c",
+      "cast_at": "2026-09-21T21:00:00+08:00",
+      "received_at": "2026-09-22T08:56:00+08:00",
+      "revealed": {
+        "choice": "conditional",
+        "conditions": [
+          {
+            "text": "付款前完成独立财务审计并向委员会报告",
+            "owner_party": "P-ALPHA",
+            "due_at": "2026-10-31T18:00:00+08:00"
+          }
+        ],
+        "salt": "gamma-m-offline-2",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-10",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-PROTOCOL",
+      "authorization_id": "seat:M-ALPHA",
+      "cast_by": "M-ALPHA",
+      "seq": 2,
+      "section_revision": 2,
+      "commitment": "83b2b902dd01dba92107edddacb23214a5a307250052b7de9fa2426931c93ed7",
+      "cast_at": null,
+      "received_at": "2026-09-22T11:00:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "alpha-p-v2",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-11",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-PROTOCOL",
+      "authorization_id": "seat:M-BETA",
+      "cast_by": "D-BETA",
+      "seq": 2,
+      "section_revision": 2,
+      "commitment": "389bc9cdfd016aacf4b5ad4b3c0534a480929da74d93cfc1b798ca9470380bf0",
+      "cast_at": null,
+      "received_at": "2026-09-22T11:10:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "dbeta-p-v2",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-12",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-PROTOCOL",
+      "authorization_id": "seat:M-GAMMA",
+      "cast_by": "M-GAMMA",
+      "seq": 2,
+      "section_revision": 2,
+      "commitment": "127e8b817b7087340b0255b0d2cf4c28684fa261b6cf224fb1560416f73f4f7a",
+      "cast_at": null,
+      "received_at": "2026-09-22T11:20:00+08:00",
+      "revealed": {
+        "choice": "approve",
+        "conditions": [],
+        "salt": "gamma-p-v2",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    },
+    {
+      "ballot_id": "BAL-13",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-SAFETY",
+      "authorization_id": "seat:M-GAMMA",
+      "cast_by": "M-GAMMA",
+      "seq": 1,
+      "section_revision": 1,
+      "commitment": "5d62c51a7bf7497b7ca9ab2af3e56e0e185922e06c21719626222368a43a1bbc",
+      "cast_at": null,
+      "received_at": "2026-09-22T16:00:00+08:00",
+      "revealed": {
+        "choice": "abstain",
+        "conditions": [],
+        "salt": "gamma-s-1",
+        "revealed_at": "2026-09-22T18:30:00+08:00"
+      }
+    }
+  ],
+  "minority_opinions": [
+    {
+      "opinion_id": "OP-001",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-SAFETY",
+      "ballot_id": "BAL-13",
+      "author_holder_id": "M-GAMMA",
+      "revision": 1,
+      "at": "2026-09-22T17:00:00+08:00",
+      "text_digest": "22ebe5947b3ea2ac0f6f07e92eb7ec07fdae4bf1cf5f69d9445cbec6c9da0d5d",
+      "text": "同意暂停入组，但主张暂停范围应限定于 301 中心而非全部中心，以免延误整体试验。"
+    }
+  ],
+  "tallies": [
+    {
+      "tally_id": "TAL-1",
+      "decision_id": "DEC-2026-031",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-MILESTONE",
+      "section_revision": 1,
+      "at": "2026-09-23T10:00:00+08:00",
+      "action_kind": "ordinary",
+      "outcome": "conditionally_approved",
+      "counts": {
+        "approve": 1,
+        "reject": 0,
+        "abstain": 0,
+        "conditional": 1
+      },
+      "participation": 2,
+      "quorum": {
+        "ok": true,
+        "detail": {
+          "need": "2/3",
+          "have": 2,
+          "eligible": 2
+        }
+      },
+      "threshold_check": {
+        "ok": true,
+        "rejected": false,
+        "detail": {
+          "kind": "majority",
+          "basis": "non_abstain",
+          "numerator": 1,
+          "denominator": 2,
+          "positive": 2,
+          "negative": 0,
+          "basis_count": 2
+        }
+      },
+      "conditions": [
+        {
+          "text": "付款前完成独立财务审计并向委员会报告",
+          "owner_party": "P-ALPHA",
+          "due_at": "2026-10-31T18:00:00+08:00"
+        }
+      ],
+      "review_window": {
+        "window_id": "RW-037",
+        "opens_at": "2026-09-16T10:00:00+08:00",
+        "closes_at": "2026-09-22T18:00:00+08:00"
+      },
+      "rules": {
+        "memberships": [
+          "M-ALPHA:v1",
+          "M-BETA:v1",
+          "M-GAMMA:v1",
+          "M-OBS:v1"
+        ],
+        "recusals": [
+          "REC-ALPHA-M:v1"
+        ],
+        "delegations": [
+          "undefined:v1"
+        ],
+        "quorum_rule": "QR-GENERAL:v1",
+        "threshold": "TH-MAJORITY:v1",
+        "review_window": "RW-037:v1",
+        "materials": [
+          "MAT-MILESTONE:v1"
+        ]
+      },
+      "rules_digest": "4b103ca6ce588f567af78f957138484ebdb7afc4a6b286269dd3d08666b41229",
+      "eligible_voters": [
+        {
+          "authorization_id": "seat:M-BETA",
+          "holder_id": "D-BETA",
+          "via": "delegation"
+        },
+        {
+          "authorization_id": "seat:M-GAMMA",
+          "holder_id": "M-GAMMA",
+          "via": "seat"
+        }
+      ],
+      "materials": [
+        {
+          "material_id": "MAT-MILESTONE",
+          "version": 1,
+          "title": "里程碑付款计划",
+          "content_digest": "c0d84082829b22859ed0ee7f8e303363b6a479581e12e63127d49ca381361c19"
+        }
+      ],
+      "ballot_accounting": {
+        "counted": [
+          "BAL-5",
+          "BAL-9"
+        ],
+        "superseded": [
+          "BAL-8"
+        ],
+        "stale": [],
+        "conflicted": [],
+        "sealed": [],
+        "invalid": [],
+        "out_of_window": [],
+        "ineligible_seat": [
+          "BAL-4"
+        ]
+      },
+      "ballots_counted": [
+        {
+          "ballot_id": "BAL-5",
+          "authorization_id": "seat:M-BETA",
+          "choice": "approve",
+          "seq": 1
+        },
+        {
+          "ballot_id": "BAL-9",
+          "authorization_id": "seat:M-GAMMA",
+          "choice": "conditional",
+          "seq": 2
+        }
+      ],
+      "minority_opinion_ids": [],
+      "tally_digest": "d9663594f7f847046cbca6937532318bcb8ed1be5f8905ad5706a7ac98ee0069",
+      "announced": true,
+      "announced_at": "2026-09-23T10:00:00+08:00"
+    },
+    {
+      "tally_id": "TAL-2",
+      "decision_id": "DEC-2026-031",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-PROTOCOL",
+      "section_revision": 2,
+      "at": "2026-09-23T10:00:00+08:00",
+      "action_kind": "ordinary",
+      "outcome": "approved",
+      "counts": {
+        "approve": 3,
+        "reject": 0,
+        "abstain": 0,
+        "conditional": 0
+      },
+      "participation": 3,
+      "quorum": {
+        "ok": true,
+        "detail": {
+          "need": "2/3",
+          "have": 3,
+          "eligible": 3
+        }
+      },
+      "threshold_check": {
+        "ok": true,
+        "rejected": false,
+        "detail": {
+          "kind": "supermajority",
+          "basis": "eligible",
+          "numerator": 2,
+          "denominator": 3,
+          "positive": 3,
+          "negative": 0,
+          "basis_count": 3
+        }
+      },
+      "conditions": [],
+      "review_window": {
+        "window_id": "RW-037",
+        "opens_at": "2026-09-16T10:00:00+08:00",
+        "closes_at": "2026-09-22T18:00:00+08:00"
+      },
+      "rules": {
+        "memberships": [
+          "M-ALPHA:v1",
+          "M-BETA:v1",
+          "M-GAMMA:v1",
+          "M-OBS:v1"
+        ],
+        "recusals": [
+          "REC-ALPHA-M:v1"
+        ],
+        "delegations": [
+          "undefined:v1"
+        ],
+        "quorum_rule": "QR-GENERAL:v1",
+        "threshold": "TH-PROTOCOL:v1",
+        "review_window": "RW-037:v1",
+        "materials": [
+          "MAT-PROTOCOL:v2"
+        ]
+      },
+      "rules_digest": "f3057b3dfd8eea23a8145a3d15663b7ca0adc80bb814e2464955200c2a3d6e50",
+      "eligible_voters": [
+        {
+          "authorization_id": "seat:M-ALPHA",
+          "holder_id": "M-ALPHA",
+          "via": "seat"
+        },
+        {
+          "authorization_id": "seat:M-BETA",
+          "holder_id": "D-BETA",
+          "via": "delegation"
+        },
+        {
+          "authorization_id": "seat:M-GAMMA",
+          "holder_id": "M-GAMMA",
+          "via": "seat"
+        }
+      ],
+      "materials": [
+        {
+          "material_id": "MAT-PROTOCOL",
+          "version": 2,
+          "title": "三期试验方案 C 稿（监管反馈修订）",
+          "content_digest": "79382dac4d287ea0e1d2a1ba44776b7a3a0489f4212f3591f5585d8fb04ed869"
+        }
+      ],
+      "ballot_accounting": {
+        "counted": [
+          "BAL-10",
+          "BAL-11",
+          "BAL-12"
+        ],
+        "superseded": [],
+        "stale": [
+          "BAL-1",
+          "BAL-2",
+          "BAL-3"
+        ],
+        "conflicted": [],
+        "sealed": [],
+        "invalid": [],
+        "out_of_window": [],
+        "ineligible_seat": []
+      },
+      "ballots_counted": [
+        {
+          "ballot_id": "BAL-10",
+          "authorization_id": "seat:M-ALPHA",
+          "choice": "approve",
+          "seq": 2
+        },
+        {
+          "ballot_id": "BAL-11",
+          "authorization_id": "seat:M-BETA",
+          "choice": "approve",
+          "seq": 2
+        },
+        {
+          "ballot_id": "BAL-12",
+          "authorization_id": "seat:M-GAMMA",
+          "choice": "approve",
+          "seq": 2
+        }
+      ],
+      "minority_opinion_ids": [],
+      "tally_digest": "bb48c5f280ad27920b051dbe3c441e64c9ff4b96712cdf6bb3c4f282e4a92522",
+      "announced": true,
+      "announced_at": "2026-09-23T10:00:00+08:00"
+    },
+    {
+      "tally_id": "TAL-3",
+      "decision_id": "DEC-2026-031",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-SAFETY",
+      "section_revision": 1,
+      "at": "2026-09-23T10:00:00+08:00",
+      "action_kind": "ordinary",
+      "outcome": "approved",
+      "counts": {
+        "approve": 2,
+        "reject": 0,
+        "abstain": 1,
+        "conditional": 0
+      },
+      "participation": 3,
+      "quorum": {
+        "ok": true,
+        "detail": {
+          "need": "2/3",
+          "have": 3,
+          "eligible": 3
+        }
+      },
+      "threshold_check": {
+        "ok": true,
+        "rejected": false,
+        "detail": {
+          "kind": "unanimous",
+          "basis": "non_abstain",
+          "numerator": 1,
+          "denominator": 1,
+          "positive": 2,
+          "negative": 0,
+          "basis_count": 2
+        }
+      },
+      "conditions": [],
+      "review_window": {
+        "window_id": "RW-037",
+        "opens_at": "2026-09-16T10:00:00+08:00",
+        "closes_at": "2026-09-22T18:00:00+08:00"
+      },
+      "rules": {
+        "memberships": [
+          "M-ALPHA:v1",
+          "M-BETA:v1",
+          "M-GAMMA:v1",
+          "M-OBS:v1"
+        ],
+        "recusals": [
+          "REC-ALPHA-M:v1"
+        ],
+        "delegations": [
+          "undefined:v1"
+        ],
+        "quorum_rule": "QR-GENERAL:v1",
+        "threshold": "TH-SAFETY:v1",
+        "review_window": "RW-037:v1",
+        "materials": [
+          "MAT-SAFETY:v1"
+        ]
+      },
+      "rules_digest": "575e620d693ed4839d03ad23625906756c06eb41914faf189d1a7b7067ff3c1d",
+      "eligible_voters": [
+        {
+          "authorization_id": "seat:M-ALPHA",
+          "holder_id": "M-ALPHA",
+          "via": "seat"
+        },
+        {
+          "authorization_id": "seat:M-BETA",
+          "holder_id": "D-BETA",
+          "via": "delegation"
+        },
+        {
+          "authorization_id": "seat:M-GAMMA",
+          "holder_id": "M-GAMMA",
+          "via": "seat"
+        }
+      ],
+      "materials": [
+        {
+          "material_id": "MAT-SAFETY",
+          "version": 1,
+          "title": "SAE-2026-094 初步报告",
+          "content_digest": "2e97f6847e90c81fd50e8360a2d8fb9da7ca43c43d71c18f24739d52caee9c38"
+        }
+      ],
+      "ballot_accounting": {
+        "counted": [
+          "BAL-13",
+          "BAL-6",
+          "BAL-7"
+        ],
+        "superseded": [],
+        "stale": [],
+        "conflicted": [],
+        "sealed": [],
+        "invalid": [],
+        "out_of_window": [],
+        "ineligible_seat": []
+      },
+      "ballots_counted": [
+        {
+          "ballot_id": "BAL-6",
+          "authorization_id": "seat:M-ALPHA",
+          "choice": "approve",
+          "seq": 1
+        },
+        {
+          "ballot_id": "BAL-7",
+          "authorization_id": "seat:M-BETA",
+          "choice": "approve",
+          "seq": 1
+        },
+        {
+          "ballot_id": "BAL-13",
+          "authorization_id": "seat:M-GAMMA",
+          "choice": "abstain",
+          "seq": 1
+        }
+      ],
+      "minority_opinion_ids": [
+        "OP-001"
+      ],
+      "tally_digest": "5b0b78dc2d84f706b5ec2ea75fe3c4cef4591fe3ffc97709daab2d1fed5b941f",
+      "announced": true,
+      "announced_at": "2026-09-23T10:00:00+08:00"
+    }
+  ],
+  "corrections": [],
+  "decisions": [
+    {
+      "decision_id": "DEC-2026-031",
+      "motion_id": "M-2026-031",
+      "section_ids": [
+        "SEC-MILESTONE",
+        "SEC-PROTOCOL",
+        "SEC-SAFETY"
+      ],
+      "motion_revision": 2,
+      "action_kind": "ordinary",
+      "announced_at": "2026-09-23T10:00:00+08:00",
+      "declared_by": "M-ALPHA",
+      "overall_outcome": "conditionally_approved",
+      "tally_ids": [
+        "TAL-1",
+        "TAL-2",
+        "TAL-3"
+      ],
+      "condition_ids": [
+        "CON-1"
+      ],
+      "correction_ids": []
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "ACT-SAFE-1",
+      "kind": "safety_emergency",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-SAFETY",
+      "measure": "pause",
+      "reason": "301 中心报告两例可疑严重不良事件",
+      "actor_id": "M-GAMMA",
+      "role": "safety_officer",
+      "acted_at": "2026-09-21T11:00:00+08:00",
+      "review_by": "2026-09-23T11:00:00+08:00",
+      "status": "ratified",
+      "ratification": {
+        "ratified_by": "M-ALPHA",
+        "ratified_at": "2026-09-22T09:30:00+08:00"
+      }
+    }
+  ],
+  "conditions": [
+    {
+      "condition_id": "CON-1",
+      "decision_id": "DEC-2026-031",
+      "motion_id": "M-2026-031",
+      "section_id": "SEC-MILESTONE",
+      "text": "付款前完成独立财务审计并向委员会报告",
+      "owner_party": "P-ALPHA",
+      "due_at": "2026-10-31T18:00:00+08:00",
+      "status": "open",
+      "created_at": "2026-09-23T10:00:00+08:00"
+    }
+  ],
+  "notices": [
+    {
+      "notice_id": "NTC-1",
+      "decision_id": "DEC-2026-031",
+      "action_id": null,
+      "recipient_id": "P-ALPHA",
+      "channel": "secure_mail",
+      "attempted_at": "2026-09-23T10:05:00+08:00",
+      "status": "delivered",
+      "failure_reason": null,
+      "retry_of": null
+    },
+    {
+      "notice_id": "NTC-2",
+      "decision_id": "DEC-2026-031",
+      "action_id": null,
+      "recipient_id": "P-GAMMA",
+      "channel": "secure_mail",
+      "attempted_at": "2026-09-23T10:05:00+08:00",
+      "status": "delivered",
+      "failure_reason": null,
+      "retry_of": null
+    },
+    {
+      "notice_id": "NTC-3",
+      "decision_id": "DEC-2026-031",
+      "action_id": null,
+      "recipient_id": "P-BETA",
+      "channel": "secure_mail",
+      "attempted_at": "2026-09-23T10:06:00+08:00",
+      "status": "failed",
+      "failure_reason": "550 mailbox temporarily unavailable",
+      "retry_of": null
+    }
+  ],
+  "audit": [
+    {
+      "seq": 1,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "membership_registered",
+      "detail": {
+        "id": "M-ALPHA",
+        "version": 1
+      }
+    },
+    {
+      "seq": 2,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "membership_registered",
+      "detail": {
+        "id": "M-BETA",
+        "version": 1
+      }
+    },
+    {
+      "seq": 3,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "membership_registered",
+      "detail": {
+        "id": "M-GAMMA",
+        "version": 1
+      }
+    },
+    {
+      "seq": 4,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "membership_registered",
+      "detail": {
+        "id": "M-OBS",
+        "version": 1
+      }
+    },
+    {
+      "seq": 5,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "delegation_registered",
+      "detail": {
+        "id": "M-BETA",
+        "version": 1
+      }
+    },
+    {
+      "seq": 6,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "officer_registered",
+      "detail": {
+        "id": "chair",
+        "version": 1
+      }
+    },
+    {
+      "seq": 7,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "officer_registered",
+      "detail": {
+        "id": "safety_officer",
+        "version": 1
+      }
+    },
+    {
+      "seq": 8,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "officer_registered",
+      "detail": {
+        "id": "steering_group_chair",
+        "version": 1
+      }
+    },
+    {
+      "seq": 9,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "agenda_scope_registered",
+      "detail": {
+        "id": "AS-037",
+        "version": 1
+      }
+    },
+    {
+      "seq": 10,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "quorum_rule_registered",
+      "detail": {
+        "id": "QR-GENERAL",
+        "version": 1
+      }
+    },
+    {
+      "seq": 11,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "threshold_registered",
+      "detail": {
+        "id": "TH-MAJORITY",
+        "version": 1
+      }
+    },
+    {
+      "seq": 12,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "threshold_registered",
+      "detail": {
+        "id": "TH-PROTOCOL",
+        "version": 1
+      }
+    },
+    {
+      "seq": 13,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "threshold_registered",
+      "detail": {
+        "id": "TH-SAFETY",
+        "version": 1
+      }
+    },
+    {
+      "seq": 14,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "material_registered",
+      "detail": {
+        "material_id": "MAT-MILESTONE",
+        "version": 1,
+        "content_digest": "c0d84082829b22859ed0ee7f8e303363b6a479581e12e63127d49ca381361c19"
+      }
+    },
+    {
+      "seq": 15,
+      "at": "2026-09-01T08:00:00+08:00",
+      "kind": "material_registered",
+      "detail": {
+        "material_id": "MAT-PROTOCOL",
+        "version": 1,
+        "content_digest": "6c783fb325524a9fe6c726494107e90344fe6a171a84779df7d2edc692c69fe2"
+      }
+    },
+    {
+      "seq": 16,
+      "at": "2026-09-20T18:00:00+08:00",
+      "kind": "material_registered",
+      "detail": {
+        "material_id": "MAT-SAFETY",
+        "version": 1,
+        "content_digest": "2e97f6847e90c81fd50e8360a2d8fb9da7ca43c43d71c18f24739d52caee9c38"
+      }
+    },
+    {
+      "seq": 17,
+      "at": "2026-09-16T09:30:00+08:00",
+      "kind": "motion_created",
+      "detail": {
+        "motion_id": "M-2026-031",
+        "sections": [
+          "SEC-MILESTONE",
+          "SEC-PROTOCOL",
+          "SEC-SAFETY"
+        ]
+      }
+    },
+    {
+      "seq": 18,
+      "at": "2026-09-16T10:00:00+08:00",
+      "kind": "review_window_registered",
+      "detail": {
+        "id": "RW-037",
+        "version": 1
+      }
+    },
+    {
+      "seq": 19,
+      "at": "2026-09-17T09:00:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-1",
+        "authorization_id": "seat:M-ALPHA",
+        "section_id": "SEC-PROTOCOL",
+        "seq": 1,
+        "commitment": "119f8ee2b1c53697d1d8a09ba1059d7ef02030bd902da99c9bf208ace77c8f53"
+      }
+    },
+    {
+      "seq": 20,
+      "at": "2026-09-17T09:10:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-2",
+        "authorization_id": "seat:M-BETA",
+        "section_id": "SEC-PROTOCOL",
+        "seq": 1,
+        "commitment": "782e23b3c05d2611c9227c00c3f57580cff1f2bcd7402face68a56d0a99569ea"
+      }
+    },
+    {
+      "seq": 21,
+      "at": "2026-09-17T09:20:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-3",
+        "authorization_id": "seat:M-GAMMA",
+        "section_id": "SEC-PROTOCOL",
+        "seq": 1,
+        "commitment": "bff61223bf22a17c7142a28246971524f654023a387ebd28b05b8d0a71a59464"
+      }
+    },
+    {
+      "seq": 22,
+      "at": "2026-09-19T08:00:00+08:00",
+      "kind": "material_registered",
+      "detail": {
+        "material_id": "MAT-PROTOCOL",
+        "version": 2,
+        "content_digest": "79382dac4d287ea0e1d2a1ba44776b7a3a0489f4212f3591f5585d8fb04ed869"
+      }
+    },
+    {
+      "seq": 23,
+      "at": "2026-09-19T10:00:00+08:00",
+      "kind": "motion_revised",
+      "detail": {
+        "motion_id": "M-2026-031",
+        "revision": 2,
+        "changed_sections": [
+          "SEC-PROTOCOL"
+        ]
+      }
+    },
+    {
+      "seq": 24,
+      "at": "2026-09-20T09:00:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-4",
+        "authorization_id": "seat:M-ALPHA",
+        "section_id": "SEC-MILESTONE",
+        "seq": 1,
+        "commitment": "b6ed76a3d956015f691884eb46ba0644ed7681bb3318e60516eb9d401c92b807"
+      }
+    },
+    {
+      "seq": 25,
+      "at": "2026-09-20T09:15:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-5",
+        "authorization_id": "seat:M-BETA",
+        "section_id": "SEC-MILESTONE",
+        "seq": 1,
+        "commitment": "2efb05400329cef9a8f13c9d28b3332643ec93c709e8530ce32775e480170327"
+      }
+    },
+    {
+      "seq": 26,
+      "at": "2026-09-20T10:00:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-6",
+        "authorization_id": "seat:M-ALPHA",
+        "section_id": "SEC-SAFETY",
+        "seq": 1,
+        "commitment": "e3d7dc2f0fed4c9a8ad17a438ab2a24e565c11413ceb32ff8f683271e3c940b8"
+      }
+    },
+    {
+      "seq": 27,
+      "at": "2026-09-20T10:15:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-7",
+        "authorization_id": "seat:M-BETA",
+        "section_id": "SEC-SAFETY",
+        "seq": 1,
+        "commitment": "bcad2f874fc75f36264bbd057e312562df0dee56bd4f83abd035b5da901e76c3"
+      }
+    },
+    {
+      "seq": 28,
+      "at": "2026-09-21T11:00:00+08:00",
+      "kind": "safety_emergency_acted",
+      "detail": {
+        "action_id": "ACT-SAFE-1",
+        "measure": "pause",
+        "actor_id": "M-GAMMA",
+        "review_by": "2026-09-23T11:00:00+08:00"
+      }
+    },
+    {
+      "seq": 29,
+      "at": "2026-09-22T09:30:00+08:00",
+      "kind": "safety_action_ratified",
+      "detail": {
+        "action_id": "ACT-SAFE-1",
+        "ratified_by": "M-ALPHA"
+      }
+    },
+    {
+      "seq": 30,
+      "at": "2026-09-22T08:55:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-8",
+        "authorization_id": "seat:M-GAMMA",
+        "section_id": "SEC-MILESTONE",
+        "seq": 1,
+        "commitment": "2fc4c333fa1eac4673c878435971d112e5a73b7739da703d9fdda58d425395d8"
+      }
+    },
+    {
+      "seq": 31,
+      "at": "2026-09-22T08:56:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-9",
+        "authorization_id": "seat:M-GAMMA",
+        "section_id": "SEC-MILESTONE",
+        "seq": 2,
+        "commitment": "67b367d45f56184fb5fbe24c7305fc142e3ca2866ca0d1f99758b2be42774c9c"
+      }
+    },
+    {
+      "seq": 32,
+      "at": "2026-09-22T11:00:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-10",
+        "authorization_id": "seat:M-ALPHA",
+        "section_id": "SEC-PROTOCOL",
+        "seq": 2,
+        "commitment": "83b2b902dd01dba92107edddacb23214a5a307250052b7de9fa2426931c93ed7"
+      }
+    },
+    {
+      "seq": 33,
+      "at": "2026-09-22T11:10:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-11",
+        "authorization_id": "seat:M-BETA",
+        "section_id": "SEC-PROTOCOL",
+        "seq": 2,
+        "commitment": "389bc9cdfd016aacf4b5ad4b3c0534a480929da74d93cfc1b798ca9470380bf0"
+      }
+    },
+    {
+      "seq": 34,
+      "at": "2026-09-22T11:20:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-12",
+        "authorization_id": "seat:M-GAMMA",
+        "section_id": "SEC-PROTOCOL",
+        "seq": 2,
+        "commitment": "127e8b817b7087340b0255b0d2cf4c28684fa261b6cf224fb1560416f73f4f7a"
+      }
+    },
+    {
+      "seq": 35,
+      "at": "2026-09-22T16:00:00+08:00",
+      "kind": "ballot_received",
+      "detail": {
+        "ballot_id": "BAL-13",
+        "authorization_id": "seat:M-GAMMA",
+        "section_id": "SEC-SAFETY",
+        "seq": 1,
+        "commitment": "5d62c51a7bf7497b7ca9ab2af3e56e0e185922e06c21719626222368a43a1bbc"
+      }
+    },
+    {
+      "seq": 36,
+      "at": "2026-09-22T17:00:00+08:00",
+      "kind": "minority_opinion_filed",
+      "detail": {
+        "opinion_id": "OP-001",
+        "motion_id": "M-2026-031",
+        "section_id": "SEC-SAFETY",
+        "revision": 1
+      }
+    },
+    {
+      "seq": 37,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-1"
+      }
+    },
+    {
+      "seq": 38,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-2"
+      }
+    },
+    {
+      "seq": 39,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-3"
+      }
+    },
+    {
+      "seq": 40,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-4"
+      }
+    },
+    {
+      "seq": 41,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-5"
+      }
+    },
+    {
+      "seq": 42,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-6"
+      }
+    },
+    {
+      "seq": 43,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-7"
+      }
+    },
+    {
+      "seq": 44,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-8"
+      }
+    },
+    {
+      "seq": 45,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-9"
+      }
+    },
+    {
+      "seq": 46,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-10"
+      }
+    },
+    {
+      "seq": 47,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-11"
+      }
+    },
+    {
+      "seq": 48,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-12"
+      }
+    },
+    {
+      "seq": 49,
+      "at": "2026-09-22T18:30:00+08:00",
+      "kind": "ballot_revealed",
+      "detail": {
+        "ballot_id": "BAL-13"
+      }
+    },
+    {
+      "seq": 50,
+      "at": "2026-09-23T08:30:00+08:00",
+      "kind": "recusal_registered",
+      "detail": {
+        "id": "REC-ALPHA-M",
+        "version": 1
+      }
+    },
+    {
+      "seq": 51,
+      "at": "2026-09-23T10:00:00+08:00",
+      "kind": "decision_announced",
+      "detail": {
+        "decision_id": "DEC-2026-031",
+        "motion_id": "M-2026-031",
+        "section_ids": [
+          "SEC-MILESTONE",
+          "SEC-PROTOCOL",
+          "SEC-SAFETY"
+        ],
+        "overall_outcome": "conditionally_approved",
+        "tally_digests": [
+          "d9663594f7f847046cbca6937532318bcb8ed1be5f8905ad5706a7ac98ee0069",
+          "bb48c5f280ad27920b051dbe3c441e64c9ff4b96712cdf6bb3c4f282e4a92522",
+          "5b0b78dc2d84f706b5ec2ea75fe3c4cef4591fe3ffc97709daab2d1fed5b941f"
+        ]
+      }
+    },
+    {
+      "seq": 52,
+      "at": "2026-09-23T10:05:00+08:00",
+      "kind": "notice_recorded",
+      "detail": {
+        "notice_id": "NTC-1",
+        "status": "delivered"
+      }
+    },
+    {
+      "seq": 53,
+      "at": "2026-09-23T10:05:00+08:00",
+      "kind": "notice_recorded",
+      "detail": {
+        "notice_id": "NTC-2",
+        "status": "delivered"
+      }
+    },
+    {
+      "seq": 54,
+      "at": "2026-09-23T10:06:00+08:00",
+      "kind": "notice_recorded",
+      "detail": {
+        "notice_id": "NTC-3",
+        "status": "failed"
+      }
+    }
+  ]
+}
