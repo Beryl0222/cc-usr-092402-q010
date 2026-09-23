@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node --check src/contracts.js",
+    "build": "node --check src/contracts.js && node --check src/engine.js && node --check src/builder.js",
+    "fixture": "node scripts/generate_fixture.mjs",
     "test": "node --test"
   }
 }
