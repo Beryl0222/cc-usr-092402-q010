@@ -1,0 +1,10 @@
+{
+  "name": "drug-council",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --check src/contracts.js",
+    "test": "node --test"
+  }
+}
